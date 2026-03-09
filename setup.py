@@ -18,5 +18,5 @@ setup(
         "pandas",
         "openpyxl",
     ],
-    python_requires='>=3.8,<3.9',
+    python_requires='>=3.8,<3.11',
 )
