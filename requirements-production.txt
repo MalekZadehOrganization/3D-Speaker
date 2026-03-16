@@ -1,0 +1,48 @@
+
+# Requirements for speakerlab-env
+# ===== Torch =====
+torch==2.2
+torchaudio
+torchvision
+
+# ===== Core numeric (SpeakerLab-safe) =====
+numba>=0.57,<0.60
+soundfile==0.13.1
+numpy<2.0
+
+# ===== Clustering / embeddings =====
+fastcluster==1.2.6
+hdbscan==0.8.37
+pynndescent>=0.5.11,<0.6
+umap-learn>=0.5.5
+
+# ===== NLP / Transformers =====
+nltk>=3.9.1
+transformers>=4.48.0
+huggingface-hub==0.36.0
+
+# ===== Whisper / inference =====
+ctranslate2>=4.5.0
+faster-whisper>=1.1.1
+
+# ===== Diarization =====
+pyannote.core==5.0.0
+pyannote.metrics==3.2.1
+pyannote.audio==3.4.0
+torchmetrics==1.8.2
+
+# ===== ModelScope / SpeakerLab =====
+modelscope[audio]
+
+# ===== API / utilities =====
+boto3==1.42.9
+fastapi==0.124.4
+minio==7.2.20
+openpyxl==3.1.5
+pydantic==2.12.5
+pysubs2==1.8.0
+pytest==9.0.2
+python-dotenv==1.2.1
+python-multipart==0.0.20
+tqdm==4.67.1
+uvicorn[standard]==0.38.0
